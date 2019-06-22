@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Highcharts data from JSON Response</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $.getJSON('./first.json', function (data) {
+
+                var year = Object.keys(data);
+                var val = Object.values(data);
+
+                $('#container').highcharts({
+                    chart: {
+                        type: "column"
+                    },
+                    title: {
+                        text: "Total IPL Matches per year."
+                    },
+                    xAxis: {
+                        categories: year,
+                        type: 'category',
+                        allowDecimals: false,
+                        title: {
+                            text: "Years"
+                        }
+                    },
+                    yAxis: {
+                        title: {
+                            text: "Total number of matches."
+                        }
+                    },
+                    series: [{
+                        name: 'Total Matches',
+                        data: val
+                    }]
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="container" style="height: 400px"></div>
+asdfd
+</body>
+
+</html>

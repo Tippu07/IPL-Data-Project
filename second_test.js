@@ -1,0 +1,133 @@
+var expect = require('chai').expect;
+var data = require('./second_exports');
+describe('matches_won_teams()', function () {
+	it('should return matches won of all teams over all the years of IPL.', function () {
+		var result = data.matches_won_teams([
+			{
+				'id': 1,
+				'season': 2017,
+				'city': 'Hyderabad',
+				'date': '2017-04-05',
+				'team1': 'Sunrisers Hyderabad',
+				'team2': 'Royal Challengers Bangalore',
+				'toss_winner': 'Royal Challengers Bangalore',
+				'toss_decision': 'field',
+				'result': 'normal',
+				'dl_applied': 0,
+				'winner': 'Sunrisers Hyderabad',
+				'win_by_runs': 35,
+				'win_by_wickets': 0,
+				'player_of_match': 'Yuvraj Singh',
+				'venue': 'Rajiv Gandhi International Stadium, Uppal',
+				'umpire1': 'AY Dandekar',
+				'umpire2': 'NJ Llong',
+				'umpire3': ''
+			},
+			{
+				'id': 2,
+				'season': 2017,
+				'city': 'Pune',
+				'date': '2017-04-06',
+				'team1': 'Mumbai Indians',
+				'team2': 'Rising Pune Supergiant',
+				'toss_winner': 'Rising Pune Supergiant',
+				'toss_decision': 'field',
+				'result': 'normal',
+				'dl_applied': 0,
+				'winner': 'Rising Pune Supergiant',
+				'win_by_runs': 0,
+				'win_by_wickets': 7,
+				'player_of_match': 'SPD Smith',
+				'venue': 'Maharashtra Cricket Association Stadium',
+				'umpire1': 'A Nand Kishore',
+				'umpire2': 'S Ravi',
+				'umpire3': ''
+			},
+			{
+				'id': 3,
+				'season': 2017,
+				'city': 'Rajkot',
+				'date': '2017-04-07',
+				'team1': 'Gujarat Lions',
+				'team2': 'Kolkata Knight Riders',
+				'toss_winner': 'Kolkata Knight Riders',
+				'toss_decision': 'field',
+				'result': 'normal',
+				'dl_applied': 0,
+				'winner': 'Kolkata Knight Riders',
+				'win_by_runs': 0,
+				'win_by_wickets': 10,
+				'player_of_match': 'CA Lynn',
+				'venue': 'Saurashtra Cricket Association Stadium',
+				'umpire1': 'Nitin Menon',
+				'umpire2': 'CK Nandan',
+				'umpire3': ''
+			},
+			{
+				'id': 577,
+				'season': 2016,
+				'city': 'Mumbai',
+				'date': '2016-04-09',
+				'team1': 'Mumbai Indians',
+				'team2': 'Rising Pune Supergiants',
+				'toss_winner': 'Mumbai Indians',
+				'toss_decision': 'bat',
+				'result': 'normal',
+				'dl_applied': 0,
+				'winner': 'Rising Pune Supergiants',
+				'win_by_runs': 0,
+				'win_by_wickets': 9,
+				'player_of_match': 'AM Rahane',
+				'venue': 'Wankhede Stadium',
+				'umpire1': 'HDPK Dharmasena',
+				'umpire2': 'CK Nandan',
+				'umpire3': ''
+			},
+			{
+				'id': 578,
+				'season': 2016,
+				'city': 'Kolkata',
+				'date': '2016-04-10',
+				'team1': 'Delhi Daredevils',
+				'team2': 'Kolkata Knight Riders',
+				'toss_winner': 'Kolkata Knight Riders',
+				'toss_decision': 'field',
+				'result': 'normal',
+				'dl_applied': 0,
+				'winner': 'Kolkata Knight Riders',
+				'win_by_runs': 0,
+				'win_by_wickets': 9,
+				'player_of_match': 'AD Russell',
+				'venue': 'Eden Gardens',
+				'umpire1': 'S Ravi',
+				'umpire2': 'C Shamshuddin',
+				'umpire3': ''
+			},
+			{
+				'id': 579,
+				'season': 2016,
+				'city': 'Chandigarh',
+				'date': '2016-04-11',
+				'team1': 'Kings XI Punjab',
+				'team2': 'Gujarat Lions',
+				'toss_winner': 'Gujarat Lions',
+				'toss_decision': 'field',
+				'result': 'normal',
+				'dl_applied': 0,
+				'winner': 'Gujarat Lions',
+				'win_by_runs': 0,
+				'win_by_wickets': 5,
+				'player_of_match': 'AJ Finch',
+				'venue': 'Punjab Cricket Association IS Bindra Stadium, Mohali',
+				'umpire1': 'AK Chaudhary',
+				'umpire2': 'VA Kulkarni',
+				'umpire3': ''
+			}
+		]);
+		var expected_result = {
+			'2017': { 'Sunrisers Hyderabad': 1, 'Rising Pune Supergiant': 1, 'Kolkata Knight Riders': 1 },
+			'2016': { 'Rising Pune Supergiants': 1, 'Kolkata Knight Riders': 1, 'Gujarat Lions': 1 }
+		};
+		expect(result).deep.equal(expected_result);
+	});
+});

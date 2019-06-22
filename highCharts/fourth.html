@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Highcharts data from JSON Response</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>		
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+	<script type="text/javascript">
+        $(function () {
+                $.getJSON('./fourth.json', function(data) {
+                    var player_names = []
+                    var player_echonomy = []
+                    for(var i in data){
+                        player_names[i]=data[i][0]
+                    }
+                    //console.log(player_names)
+                    for(var i in data){
+                        player_echonomy[i]=data[i][1]
+                    }
+                    //console.log(player_echonomy)
+                    $('#container').highcharts({
+                    chart: {
+                        type: "column"
+                    },
+                    title: {
+                        text: "Top 5 Echonomic Bowlers Overall IPL."
+                    },
+                    xAxis: {
+                        categories:player_names,
+                        type: 'category',
+                        allowDecimals: false,
+                        title: {
+                            text: "Bowlers Names"
+                        }
+                    },
+                    yAxis: {
+                        title: {
+                            text: "Bowler Echonomic."
+                        }
+                    },
+                    series: [{
+	                    name: 'Player Echonomy',
+                        data: player_echonomy
+                    }]
+                }); 
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="container" style="height: 400px"></div>
+    
+</body>
+</html>

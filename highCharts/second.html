@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Highcharts data from JSON Response</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>		
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+	<script type="text/javascript">
+        $(function () {
+                $.getJSON('./second.json', function(data) {
+
+                    var year=Object.keys(data);
+                    var arr = Object.values(data);
+                    
+            
+                    var arrObj = {}
+                    for(let i in arr){
+                        var team=Object.keys(arr[i]);
+                        var won=Object.values(arr[i]);
+                        team.forEach((name,i) => {
+                            if(arrObj[name])
+                            {
+                                arrObj[name].push(won[i]);
+                                
+                            }
+                            else
+                            {
+                                arrObj[name]=[];
+                                arrObj[name].push(won[i]);
+                            }
+                        })    
+                    }
+                    for(var i in arrObj)
+                    if(i === '')
+                        delete arrObj[i]; 
+
+                    console.log(arrObj)
+                    var teamNames = Object.keys(arrObj)
+                    var teamArray = Object.values(arrObj)
+                    
+                    $('#container').highcharts({
+                    chart: {
+                        type: "bar"
+                    },
+                    title: {
+                        text: "Matches won of all teams over all the years of IPL."
+                    },
+                    xAxis: {
+                        categories:year,
+                        type: 'category',
+                        allowDecimals: false,
+                        title: {
+                            text: "Years"
+                        }
+                    },
+                    yAxis: {
+                        title: {
+                            text: "Total number of matches."
+                        }
+                    },
+                    legend: {
+                        reversed: true
+                    },
+                    plotOptions: {
+                        series: {
+                        stacking: 'normal'
+                    }
+                    },
+                    series: [{
+                        name: teamNames[0],
+                        data: teamArray[0]
+                    },
+                    {
+                        name: teamNames[1],
+                        data: teamArray[1]
+                    },
+                    {
+                        name: teamNames[2],
+                        data: teamArray[2]
+                    },
+                    {
+                        name: teamNames[3],
+                        data: teamArray[3]
+                    },
+                    {
+                        name: teamNames[4],
+                        data: teamArray[4]
+                    },
+                    {
+                        name: teamNames[5],
+                        data: teamArray[5]
+                    },
+                    {
+                        name: teamNames[6],
+                        data: teamArray[6]
+                    },
+                    {
+                        name: teamNames[7],
+                        data: teamArray[7]
+                    },
+                    {
+                        name: teamNames[8],
+                        data: teamArray[8]
+                    },
+                    {
+                        name: teamNames[9],
+                        data: teamArray[9]
+                    },
+                    {
+                        name: teamNames[10],
+                        data: teamArray[10]
+                    },
+                    {
+                        name: teamNames[11],
+                        data: teamArray[11]
+                    },
+                    {
+                        name: teamNames[12],
+                        data: teamArray[12]
+                    },
+                    {
+                        name: teamNames[13],
+                        data: teamArray[13]
+                    },
+                ]
+                }); 
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="container" style="height: 400px"></div>
+    
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "02-tippu-data-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "first.js",
+  "dependencies": {
+    "chai": "^4.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/mountblue/dec-2018-js-backend/02-tippu-data-project.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

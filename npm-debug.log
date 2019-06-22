@@ -1,0 +1,466 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'node' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData node
+8 silly fetchNamedPackageData node
+9 silly mapToRegistry name node
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/node
+13 verbose request uri https://registry.npmjs.org/node
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 10:32:53 AM
+16 verbose request id eb6f37f418325ac6
+17 http request GET https://registry.npmjs.org/node
+18 http 200 https://registry.npmjs.org/node
+19 verbose headers { date: 'Fri, 21 Dec 2018 05:02:53 GMT',
+19 verbose headers   'content-type': 'application/json',
+19 verbose headers   'transfer-encoding': 'chunked',
+19 verbose headers   connection: 'keep-alive',
+19 verbose headers   'set-cookie':
+19 verbose headers    [ '__cfduid=d8a6a92192458f460e16dbea4cad255fc1545368573; expires=Sat, 21-Dec-19 05:02:53 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+19 verbose headers   'cf-cache-status': 'HIT',
+19 verbose headers   'cache-control': 'max-age=300',
+19 verbose headers   'cf-ray': '48c7cc925a698aa3-BOM',
+19 verbose headers   etag: 'W/"9d595178a50a0a375ce6c5f07a8e9726"',
+19 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+19 verbose headers   'last-modified': 'Tue, 11 Dec 2018 02:51:06 GMT',
+19 verbose headers   vary: 'accept-encoding, accept',
+19 verbose headers   'x-amz-meta-rev': '444-29729e8620b4305a4edec11681cee94c',
+19 verbose headers   server: 'cloudflare',
+19 verbose headers   'content-encoding': 'gzip' }
+20 silly get cb [ 200,
+20 silly get   { date: 'Fri, 21 Dec 2018 05:02:53 GMT',
+20 silly get     'content-type': 'application/json',
+20 silly get     'transfer-encoding': 'chunked',
+20 silly get     connection: 'keep-alive',
+20 silly get     'set-cookie':
+20 silly get      [ '__cfduid=d8a6a92192458f460e16dbea4cad255fc1545368573; expires=Sat, 21-Dec-19 05:02:53 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+20 silly get     'cf-cache-status': 'HIT',
+20 silly get     'cache-control': 'max-age=300',
+20 silly get     'cf-ray': '48c7cc925a698aa3-BOM',
+20 silly get     etag: 'W/"9d595178a50a0a375ce6c5f07a8e9726"',
+20 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+20 silly get     'last-modified': 'Tue, 11 Dec 2018 02:51:06 GMT',
+20 silly get     vary: 'accept-encoding, accept',
+20 silly get     'x-amz-meta-rev': '444-29729e8620b4305a4edec11681cee94c',
+20 silly get     server: 'cloudflare',
+20 silly get     'content-encoding': 'gzip' } ]
+21 verbose get saving node to /home/tippu/.npm/registry.npmjs.org/node/.cache.json
+22 silly install normalizeTree
+23 silly loadCurrentTree Finishing
+24 silly loadIdealTree Starting
+25 silly install loadIdealTree
+26 silly cloneCurrentTree Starting
+27 silly install cloneCurrentTreeToIdealTree
+28 silly cloneCurrentTree Finishing
+29 silly loadShrinkwrap Starting
+30 silly install loadShrinkwrap
+31 silly loadShrinkwrap Finishing
+32 silly loadAllDepsIntoIdealTree Starting
+33 silly install loadAllDepsIntoIdealTree
+34 silly resolveWithNewModule node@11.4.0 checking installable status
+35 silly cache add args [ 'node', null ]
+36 verbose cache add spec node
+37 silly cache add parsed spec Result {
+37 silly cache add   raw: 'node',
+37 silly cache add   scope: null,
+37 silly cache add   name: 'node',
+37 silly cache add   rawSpec: '',
+37 silly cache add   spec: 'latest',
+37 silly cache add   type: 'tag' }
+38 silly addNamed node@latest
+39 verbose addNamed "latest" is being treated as a dist-tag for node
+40 info addNameTag [ 'node', 'latest' ]
+41 silly mapToRegistry name node
+42 silly mapToRegistry using default registry
+43 silly mapToRegistry registry https://registry.npmjs.org/
+44 silly mapToRegistry uri https://registry.npmjs.org/node
+45 verbose addNameTag registry:https://registry.npmjs.org/node not in flight; fetching
+46 verbose get https://registry.npmjs.org/node not expired, no request
+47 silly addNameTag next cb for node with tag latest
+48 silly addNamed node@11.4.0
+49 verbose addNamed "11.4.0" is a plain semver version for node
+50 silly mapToRegistry name node
+51 silly mapToRegistry using default registry
+52 silly mapToRegistry registry https://registry.npmjs.org/
+53 silly mapToRegistry uri https://registry.npmjs.org/node
+54 verbose addRemoteTarball https://registry.npmjs.org/node/-/node-11.4.0.tgz not in flight; adding
+55 verbose addRemoteTarball [ 'https://registry.npmjs.org/node/-/node-11.4.0.tgz',
+55 verbose addRemoteTarball   '1fbe6187e179120025d5438c3f41b84582c7d53b' ]
+56 info retry fetch attempt 1 at 10:32:53 AM
+57 info attempt registry request try #1 at 10:32:53 AM
+58 http fetch GET https://registry.npmjs.org/node/-/node-11.4.0.tgz
+59 http fetch 200 https://registry.npmjs.org/node/-/node-11.4.0.tgz
+60 silly fetchAndShaCheck shasum 1fbe6187e179120025d5438c3f41b84582c7d53b
+61 verbose addTmpTarball /tmp/npm-25150-97e58443/registry.npmjs.org/node/-/node-11.4.0.tgz not in flight; adding
+62 verbose addTmpTarball already have metadata; skipping unpack for node@11.4.0
+63 silly cache afterAdd node@11.4.0
+64 verbose afterAdd /home/tippu/.npm/node/11.4.0/package/package.json not in flight; writing
+65 verbose afterAdd /home/tippu/.npm/node/11.4.0/package/package.json written
+66 silly fetchNamedPackageData node-bin-setup
+67 silly mapToRegistry name node-bin-setup
+68 silly mapToRegistry using default registry
+69 silly mapToRegistry registry https://registry.npmjs.org/
+70 silly mapToRegistry uri https://registry.npmjs.org/node-bin-setup
+71 verbose request uri https://registry.npmjs.org/node-bin-setup
+72 verbose request no auth needed
+73 info attempt registry request try #1 at 10:32:54 AM
+74 http request GET https://registry.npmjs.org/node-bin-setup
+75 http 200 https://registry.npmjs.org/node-bin-setup
+76 verbose headers { date: 'Fri, 21 Dec 2018 05:02:54 GMT',
+76 verbose headers   'content-type': 'application/json; charset=UTF-8',
+76 verbose headers   'transfer-encoding': 'chunked',
+76 verbose headers   connection: 'keep-alive',
+76 verbose headers   'set-cookie':
+76 verbose headers    [ '__cfduid=d4090bed0b13bce6f7224b2a2d8209e0b1545368574; expires=Sat, 21-Dec-19 05:02:54 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+76 verbose headers   'cf-cache-status': 'HIT',
+76 verbose headers   'cache-control': 'max-age=300',
+76 verbose headers   'cf-ray': '48c7cc93eba58aa3-BOM',
+76 verbose headers   etag: 'W/"696d6ec470fda56a33885508a280edab"',
+76 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+76 verbose headers   'last-modified': 'Sun, 27 May 2018 09:55:03 GMT',
+76 verbose headers   vary: 'accept-encoding, accept',
+76 verbose headers   server: 'cloudflare',
+76 verbose headers   'content-encoding': 'gzip' }
+77 silly get cb [ 200,
+77 silly get   { date: 'Fri, 21 Dec 2018 05:02:54 GMT',
+77 silly get     'content-type': 'application/json; charset=UTF-8',
+77 silly get     'transfer-encoding': 'chunked',
+77 silly get     connection: 'keep-alive',
+77 silly get     'set-cookie':
+77 silly get      [ '__cfduid=d4090bed0b13bce6f7224b2a2d8209e0b1545368574; expires=Sat, 21-Dec-19 05:02:54 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+77 silly get     'cf-cache-status': 'HIT',
+77 silly get     'cache-control': 'max-age=300',
+77 silly get     'cf-ray': '48c7cc93eba58aa3-BOM',
+77 silly get     etag: 'W/"696d6ec470fda56a33885508a280edab"',
+77 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+77 silly get     'last-modified': 'Sun, 27 May 2018 09:55:03 GMT',
+77 silly get     vary: 'accept-encoding, accept',
+77 silly get     server: 'cloudflare',
+77 silly get     'content-encoding': 'gzip' } ]
+78 verbose get saving node-bin-setup to /home/tippu/.npm/registry.npmjs.org/node-bin-setup/.cache.json
+79 silly resolveWithNewModule node-bin-setup@1.0.6 checking installable status
+80 silly cache add args [ 'node-bin-setup@^1.0.0', null ]
+81 verbose cache add spec node-bin-setup@^1.0.0
+82 silly cache add parsed spec Result {
+82 silly cache add   raw: 'node-bin-setup@^1.0.0',
+82 silly cache add   scope: null,
+82 silly cache add   name: 'node-bin-setup',
+82 silly cache add   rawSpec: '^1.0.0',
+82 silly cache add   spec: '>=1.0.0 <2.0.0',
+82 silly cache add   type: 'range' }
+83 silly addNamed node-bin-setup@>=1.0.0 <2.0.0
+84 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for node-bin-setup
+85 silly addNameRange { name: 'node-bin-setup',
+85 silly addNameRange   range: '>=1.0.0 <2.0.0',
+85 silly addNameRange   hasData: false }
+86 silly mapToRegistry name node-bin-setup
+87 silly mapToRegistry using default registry
+88 silly mapToRegistry registry https://registry.npmjs.org/
+89 silly mapToRegistry uri https://registry.npmjs.org/node-bin-setup
+90 verbose addNameRange registry:https://registry.npmjs.org/node-bin-setup not in flight; fetching
+91 verbose get https://registry.npmjs.org/node-bin-setup not expired, no request
+92 silly addNameRange number 2 { name: 'node-bin-setup',
+92 silly addNameRange   range: '>=1.0.0 <2.0.0',
+92 silly addNameRange   hasData: true }
+93 silly addNameRange versions [ 'node-bin-setup',
+93 silly addNameRange   [ '1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.6' ] ]
+94 silly addNamed node-bin-setup@1.0.6
+95 verbose addNamed "1.0.6" is a plain semver version for node-bin-setup
+96 silly mapToRegistry name node-bin-setup
+97 silly mapToRegistry using default registry
+98 silly mapToRegistry registry https://registry.npmjs.org/
+99 silly mapToRegistry uri https://registry.npmjs.org/node-bin-setup
+100 verbose addRemoteTarball https://registry.npmjs.org/node-bin-setup/-/node-bin-setup-1.0.6.tgz not in flight; adding
+101 verbose addRemoteTarball [ 'https://registry.npmjs.org/node-bin-setup/-/node-bin-setup-1.0.6.tgz',
+101 verbose addRemoteTarball   '4b5c9bb937ece702d7069b36ca78af4684677528' ]
+102 info retry fetch attempt 1 at 10:32:54 AM
+103 info attempt registry request try #1 at 10:32:54 AM
+104 http fetch GET https://registry.npmjs.org/node-bin-setup/-/node-bin-setup-1.0.6.tgz
+105 http fetch 200 https://registry.npmjs.org/node-bin-setup/-/node-bin-setup-1.0.6.tgz
+106 silly fetchAndShaCheck shasum 4b5c9bb937ece702d7069b36ca78af4684677528
+107 verbose addTmpTarball /tmp/npm-25150-97e58443/registry.npmjs.org/node-bin-setup/-/node-bin-setup-1.0.6.tgz not in flight; adding
+108 verbose addTmpTarball already have metadata; skipping unpack for node-bin-setup@1.0.6
+109 silly cache afterAdd node-bin-setup@1.0.6
+110 verbose afterAdd /home/tippu/.npm/node-bin-setup/1.0.6/package/package.json not in flight; writing
+111 verbose afterAdd /home/tippu/.npm/node-bin-setup/1.0.6/package/package.json written
+112 silly loadAllDepsIntoIdealTree Finishing
+113 silly idealTree:prePrune 02-tippu-data-project@1.0.0
+113 silly idealTree:prePrune ├── assertion-error@1.1.0
+113 silly idealTree:prePrune ├── bluebird@3.5.3
+113 silly idealTree:prePrune ├── chai@4.2.0
+113 silly idealTree:prePrune ├── check-error@1.0.2
+113 silly idealTree:prePrune ├── csvtojson@2.0.8
+113 silly idealTree:prePrune ├── deep-eql@3.0.1
+113 silly idealTree:prePrune ├── get-func-name@2.0.0
+113 silly idealTree:prePrune ├── is-utf8@0.2.1
+113 silly idealTree:prePrune ├── lodash@4.17.11
+113 silly idealTree:prePrune ├── node-bin-setup@1.0.6
+113 silly idealTree:prePrune ├── node@11.4.0
+113 silly idealTree:prePrune ├── pathval@1.1.0
+113 silly idealTree:prePrune ├── strip-bom@2.0.0
+113 silly idealTree:prePrune └── type-detect@4.0.8
+114 silly loadIdealTree Finishing
+115 silly currentTree 02-tippu-data-project@1.0.0
+115 silly currentTree ├── assertion-error@1.1.0
+115 silly currentTree ├── bluebird@3.5.3
+115 silly currentTree ├── chai@4.2.0
+115 silly currentTree ├── check-error@1.0.2
+115 silly currentTree ├── csvtojson@2.0.8
+115 silly currentTree ├── deep-eql@3.0.1
+115 silly currentTree ├── get-func-name@2.0.0
+115 silly currentTree ├── is-utf8@0.2.1
+115 silly currentTree ├── lodash@4.17.11
+115 silly currentTree ├── pathval@1.1.0
+115 silly currentTree ├── strip-bom@2.0.0
+115 silly currentTree └── type-detect@4.0.8
+116 silly idealTree 02-tippu-data-project@1.0.0
+116 silly idealTree ├── assertion-error@1.1.0
+116 silly idealTree ├── bluebird@3.5.3
+116 silly idealTree ├── chai@4.2.0
+116 silly idealTree ├── check-error@1.0.2
+116 silly idealTree ├── csvtojson@2.0.8
+116 silly idealTree ├── deep-eql@3.0.1
+116 silly idealTree ├── get-func-name@2.0.0
+116 silly idealTree ├── is-utf8@0.2.1
+116 silly idealTree ├── lodash@4.17.11
+116 silly idealTree ├── node-bin-setup@1.0.6
+116 silly idealTree ├── node@11.4.0
+116 silly idealTree ├── pathval@1.1.0
+116 silly idealTree ├── strip-bom@2.0.0
+116 silly idealTree └── type-detect@4.0.8
+117 silly generateActionsToTake Starting
+118 silly install generateActionsToTake
+119 silly generateActionsToTake Finishing
+120 silly diffTrees action count 3
+121 silly diffTrees add node-bin-setup@1.0.6
+122 silly diffTrees update chai@4.2.0
+123 silly diffTrees add node@11.4.0
+124 silly decomposeActions action count 24
+125 silly decomposeActions fetch node-bin-setup@1.0.6
+126 silly decomposeActions extract node-bin-setup@1.0.6
+127 silly decomposeActions test node-bin-setup@1.0.6
+128 silly decomposeActions preinstall node-bin-setup@1.0.6
+129 silly decomposeActions build node-bin-setup@1.0.6
+130 silly decomposeActions install node-bin-setup@1.0.6
+131 silly decomposeActions postinstall node-bin-setup@1.0.6
+132 silly decomposeActions finalize node-bin-setup@1.0.6
+133 silly decomposeActions fetch chai@4.2.0
+134 silly decomposeActions extract chai@4.2.0
+135 silly decomposeActions test chai@4.2.0
+136 silly decomposeActions preinstall chai@4.2.0
+137 silly decomposeActions build chai@4.2.0
+138 silly decomposeActions install chai@4.2.0
+139 silly decomposeActions postinstall chai@4.2.0
+140 silly decomposeActions finalize chai@4.2.0
+141 silly decomposeActions fetch node@11.4.0
+142 silly decomposeActions extract node@11.4.0
+143 silly decomposeActions test node@11.4.0
+144 silly decomposeActions preinstall node@11.4.0
+145 silly decomposeActions build node@11.4.0
+146 silly decomposeActions install node@11.4.0
+147 silly decomposeActions postinstall node@11.4.0
+148 silly decomposeActions finalize node@11.4.0
+149 silly executeActions Starting
+150 silly install executeActions
+151 silly doSerial global-install 0
+152 silly doParallel fetch 3
+153 verbose lock using /home/tippu/.npm/_locks/staging-62068d1e2a451495.lock for /home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.staging
+154 silly doParallel extract 3
+155 silly extract node-bin-setup@1.0.6
+156 silly extract chai@4.2.0
+157 silly extract node@11.4.0
+158 verbose unbuild node_modules/.staging/node-bin-setup-58cf8b53
+159 verbose unbuild node_modules/.staging/node-fd6bcda6
+160 silly gentlyRm /home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.staging/node-bin-setup-58cf8b53 is being purged from base /home/tippu/GitLab/tippu-02-ipl_data_project
+161 verbose gentlyRm don't care about contents; nuking /home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.staging/node-bin-setup-58cf8b53
+162 verbose tar unpack /home/tippu/.npm/node-bin-setup/1.0.6/package.tgz
+163 verbose tar unpacking to /home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.staging/node-bin-setup-58cf8b53
+164 silly gentlyRm /home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.staging/node-bin-setup-58cf8b53 is being purged
+165 verbose gentlyRm don't care about contents; nuking /home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.staging/node-bin-setup-58cf8b53
+166 silly gentlyRm /home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.staging/node-fd6bcda6 is being purged from base /home/tippu/GitLab/tippu-02-ipl_data_project
+167 verbose gentlyRm don't care about contents; nuking /home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.staging/node-fd6bcda6
+168 silly gunzTarPerm modes [ '775', '664' ]
+169 verbose tar unpack /home/tippu/.npm/node/11.4.0/package.tgz
+170 verbose tar unpacking to /home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.staging/node-fd6bcda6
+171 silly gentlyRm /home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.staging/node-fd6bcda6 is being purged
+172 verbose gentlyRm don't care about contents; nuking /home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.staging/node-fd6bcda6
+173 silly gunzTarPerm modes [ '775', '664' ]
+174 silly gunzTarPerm extractEntry package.json
+175 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+176 silly gunzTarPerm extractEntry package.json
+177 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+178 silly gunzTarPerm extractEntry index.js
+179 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+180 silly gunzTarPerm extractEntry installArchSpecificPackage.js
+181 silly gunzTarPerm modified mode [ 'installArchSpecificPackage.js', 420, 436 ]
+182 silly gunzTarPerm extractEntry README.md
+183 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+184 silly gentlyRm /home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.staging/node-bin-setup-58cf8b53/node_modules is being purged
+185 verbose gentlyRm don't care about contents; nuking /home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.staging/node-bin-setup-58cf8b53/node_modules
+186 verbose unbuild node_modules/.staging/chai-67bde2d7
+187 silly gentlyRm /home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.staging/chai-67bde2d7 is being purged from base /home/tippu/GitLab/tippu-02-ipl_data_project
+188 verbose gentlyRm don't care about contents; nuking /home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.staging/chai-67bde2d7
+189 silly gentlyRm /home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.staging/node-fd6bcda6/node_modules is being purged
+190 verbose gentlyRm don't care about contents; nuking /home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.staging/node-fd6bcda6/node_modules
+191 verbose tar unpack /home/tippu/.npm/chai/4.2.0/package.tgz
+192 verbose tar unpacking to /home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.staging/chai-67bde2d7
+193 silly gentlyRm /home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.staging/chai-67bde2d7 is being purged
+194 verbose gentlyRm don't care about contents; nuking /home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.staging/chai-67bde2d7
+195 silly gunzTarPerm modes [ '775', '664' ]
+196 silly gunzTarPerm extractEntry package.json
+197 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+198 silly gunzTarPerm extractEntry bower.json
+199 silly gunzTarPerm modified mode [ 'bower.json', 420, 436 ]
+200 silly gunzTarPerm extractEntry chai.js
+201 silly gunzTarPerm modified mode [ 'chai.js', 420, 436 ]
+202 silly gunzTarPerm extractEntry CODE_OF_CONDUCT.md
+203 silly gunzTarPerm modified mode [ 'CODE_OF_CONDUCT.md', 420, 436 ]
+204 silly gunzTarPerm extractEntry CODEOWNERS
+205 silly gunzTarPerm modified mode [ 'CODEOWNERS', 420, 436 ]
+206 silly gunzTarPerm extractEntry CONTRIBUTING.md
+207 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 420, 436 ]
+208 silly gunzTarPerm extractEntry History.md
+209 silly gunzTarPerm modified mode [ 'History.md', 420, 436 ]
+210 silly gunzTarPerm extractEntry index.js
+211 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+212 silly gunzTarPerm extractEntry karma.conf.js
+213 silly gunzTarPerm modified mode [ 'karma.conf.js', 420, 436 ]
+214 silly gunzTarPerm extractEntry karma.sauce.js
+215 silly gunzTarPerm modified mode [ 'karma.sauce.js', 420, 436 ]
+216 silly gunzTarPerm extractEntry LICENSE
+217 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+218 silly gunzTarPerm extractEntry README.md
+219 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+220 silly gunzTarPerm extractEntry register-assert.js
+221 silly gunzTarPerm modified mode [ 'register-assert.js', 420, 436 ]
+222 silly gunzTarPerm extractEntry register-expect.js
+223 silly gunzTarPerm modified mode [ 'register-expect.js', 420, 436 ]
+224 silly gunzTarPerm extractEntry register-should.js
+225 silly gunzTarPerm modified mode [ 'register-should.js', 420, 436 ]
+226 silly gunzTarPerm extractEntry ReleaseNotes.md
+227 silly gunzTarPerm modified mode [ 'ReleaseNotes.md', 420, 436 ]
+228 silly gunzTarPerm extractEntry sauce.browsers.js
+229 silly gunzTarPerm modified mode [ 'sauce.browsers.js', 420, 436 ]
+230 silly gunzTarPerm extractEntry lib/chai.js
+231 silly gunzTarPerm modified mode [ 'lib/chai.js', 420, 436 ]
+232 silly gunzTarPerm extractEntry lib/chai/assertion.js
+233 silly gunzTarPerm modified mode [ 'lib/chai/assertion.js', 420, 436 ]
+234 silly gunzTarPerm extractEntry lib/chai/config.js
+235 silly gunzTarPerm modified mode [ 'lib/chai/config.js', 420, 436 ]
+236 silly gunzTarPerm extractEntry lib/chai/core/assertions.js
+237 silly gunzTarPerm modified mode [ 'lib/chai/core/assertions.js', 420, 436 ]
+238 silly gunzTarPerm extractEntry lib/chai/interface/assert.js
+239 silly gunzTarPerm modified mode [ 'lib/chai/interface/assert.js', 420, 436 ]
+240 silly gunzTarPerm extractEntry lib/chai/interface/expect.js
+241 silly gunzTarPerm modified mode [ 'lib/chai/interface/expect.js', 420, 436 ]
+242 silly gunzTarPerm extractEntry lib/chai/interface/should.js
+243 silly gunzTarPerm modified mode [ 'lib/chai/interface/should.js', 420, 436 ]
+244 silly gunzTarPerm extractEntry lib/chai/utils/addChainableMethod.js
+245 silly gunzTarPerm modified mode [ 'lib/chai/utils/addChainableMethod.js', 420, 436 ]
+246 silly gunzTarPerm extractEntry lib/chai/utils/addLengthGuard.js
+247 silly gunzTarPerm modified mode [ 'lib/chai/utils/addLengthGuard.js', 420, 436 ]
+248 silly gunzTarPerm extractEntry lib/chai/utils/addMethod.js
+249 silly gunzTarPerm modified mode [ 'lib/chai/utils/addMethod.js', 420, 436 ]
+250 silly gunzTarPerm extractEntry lib/chai/utils/addProperty.js
+251 silly gunzTarPerm modified mode [ 'lib/chai/utils/addProperty.js', 420, 436 ]
+252 silly gunzTarPerm extractEntry lib/chai/utils/compareByInspect.js
+253 silly gunzTarPerm modified mode [ 'lib/chai/utils/compareByInspect.js', 420, 436 ]
+254 silly gunzTarPerm extractEntry lib/chai/utils/expectTypes.js
+255 silly gunzTarPerm modified mode [ 'lib/chai/utils/expectTypes.js', 420, 436 ]
+256 silly gunzTarPerm extractEntry lib/chai/utils/flag.js
+257 silly gunzTarPerm modified mode [ 'lib/chai/utils/flag.js', 420, 436 ]
+258 silly gunzTarPerm extractEntry lib/chai/utils/getActual.js
+259 silly gunzTarPerm modified mode [ 'lib/chai/utils/getActual.js', 420, 436 ]
+260 silly gunzTarPerm extractEntry lib/chai/utils/getEnumerableProperties.js
+261 silly gunzTarPerm modified mode [ 'lib/chai/utils/getEnumerableProperties.js', 420, 436 ]
+262 silly gunzTarPerm extractEntry lib/chai/utils/getMessage.js
+263 silly gunzTarPerm modified mode [ 'lib/chai/utils/getMessage.js', 420, 436 ]
+264 silly gunzTarPerm extractEntry lib/chai/utils/getOwnEnumerableProperties.js
+265 silly gunzTarPerm modified mode [ 'lib/chai/utils/getOwnEnumerableProperties.js', 420, 436 ]
+266 silly gunzTarPerm extractEntry lib/chai/utils/getOwnEnumerablePropertySymbols.js
+267 silly gunzTarPerm modified mode [ 'lib/chai/utils/getOwnEnumerablePropertySymbols.js', 420, 436 ]
+268 silly gunzTarPerm extractEntry lib/chai/utils/getProperties.js
+269 silly gunzTarPerm modified mode [ 'lib/chai/utils/getProperties.js', 420, 436 ]
+270 silly gunzTarPerm extractEntry lib/chai/utils/index.js
+271 silly gunzTarPerm modified mode [ 'lib/chai/utils/index.js', 420, 436 ]
+272 silly gunzTarPerm extractEntry lib/chai/utils/inspect.js
+273 silly gunzTarPerm modified mode [ 'lib/chai/utils/inspect.js', 420, 436 ]
+274 silly gunzTarPerm extractEntry lib/chai/utils/isNaN.js
+275 silly gunzTarPerm modified mode [ 'lib/chai/utils/isNaN.js', 420, 436 ]
+276 silly gunzTarPerm extractEntry lib/chai/utils/isProxyEnabled.js
+277 silly gunzTarPerm modified mode [ 'lib/chai/utils/isProxyEnabled.js', 420, 436 ]
+278 silly gunzTarPerm extractEntry lib/chai/utils/objDisplay.js
+279 silly gunzTarPerm modified mode [ 'lib/chai/utils/objDisplay.js', 420, 436 ]
+280 silly gunzTarPerm extractEntry lib/chai/utils/overwriteChainableMethod.js
+281 silly gunzTarPerm modified mode [ 'lib/chai/utils/overwriteChainableMethod.js', 420, 436 ]
+282 silly gunzTarPerm extractEntry lib/chai/utils/overwriteMethod.js
+283 silly gunzTarPerm modified mode [ 'lib/chai/utils/overwriteMethod.js', 420, 436 ]
+284 silly gunzTarPerm extractEntry lib/chai/utils/overwriteProperty.js
+285 silly gunzTarPerm modified mode [ 'lib/chai/utils/overwriteProperty.js', 420, 436 ]
+286 silly gunzTarPerm extractEntry lib/chai/utils/proxify.js
+287 silly gunzTarPerm modified mode [ 'lib/chai/utils/proxify.js', 420, 436 ]
+288 silly gunzTarPerm extractEntry lib/chai/utils/test.js
+289 silly gunzTarPerm modified mode [ 'lib/chai/utils/test.js', 420, 436 ]
+290 silly gunzTarPerm extractEntry lib/chai/utils/transferFlags.js
+291 silly gunzTarPerm modified mode [ 'lib/chai/utils/transferFlags.js', 420, 436 ]
+292 silly gentlyRm /home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.staging/chai-67bde2d7/node_modules is being purged
+293 verbose gentlyRm don't care about contents; nuking /home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.staging/chai-67bde2d7/node_modules
+294 silly doParallel preinstall 3
+295 silly preinstall node-bin-setup@1.0.6 /home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.staging/node-bin-setup-58cf8b53
+296 info lifecycle node-bin-setup@1.0.6~preinstall: node-bin-setup@1.0.6
+297 silly preinstall chai@4.2.0 /home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.staging/chai-67bde2d7
+298 info lifecycle chai@4.2.0~preinstall: chai@4.2.0
+299 silly preinstall node@11.4.0 /home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.staging/node-fd6bcda6
+300 info lifecycle node@11.4.0~preinstall: node@11.4.0
+301 silly lifecycle node-bin-setup@1.0.6~preinstall: no script for preinstall, continuing
+302 silly lifecycle chai@4.2.0~preinstall: no script for preinstall, continuing
+303 verbose lifecycle node@11.4.0~preinstall: unsafe-perm in lifecycle true
+304 verbose lifecycle node@11.4.0~preinstall: PATH: /usr/share/npm/bin/node-gyp-bin:/home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.staging/node-fd6bcda6/node_modules/.bin:/home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+305 verbose lifecycle node@11.4.0~preinstall: CWD: /home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.staging/node-fd6bcda6
+306 silly lifecycle node@11.4.0~preinstall: Args: [ '-c', 'node installArchSpecificPackage' ]
+307 silly lifecycle node@11.4.0~preinstall: Returned: code: 1  signal: null
+308 info lifecycle node@11.4.0~preinstall: Failed to exec preinstall script
+309 verbose unlock done using /home/tippu/.npm/_locks/staging-62068d1e2a451495.lock for /home/tippu/GitLab/tippu-02-ipl_data_project/node_modules/.staging
+310 silly rollbackFailedOptional Starting
+311 silly rollbackFailedOptional Finishing
+312 silly runTopLevelLifecycles Starting
+313 silly runTopLevelLifecycles Finishing
+314 silly install printInstalled
+315 warn 02-tippu-data-project@1.0.0 No description
+316 verbose stack Error: node@11.4.0 preinstall: `node installArchSpecificPackage`
+316 verbose stack Exit status 1
+316 verbose stack     at EventEmitter.<anonymous> (/usr/share/npm/lib/utils/lifecycle.js:232:16)
+316 verbose stack     at emitTwo (events.js:126:13)
+316 verbose stack     at EventEmitter.emit (events.js:214:7)
+316 verbose stack     at ChildProcess.<anonymous> (/usr/share/npm/lib/utils/spawn.js:24:14)
+316 verbose stack     at emitTwo (events.js:126:13)
+316 verbose stack     at ChildProcess.emit (events.js:214:7)
+316 verbose stack     at maybeClose (internal/child_process.js:925:16)
+316 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+317 verbose pkgid node@11.4.0
+318 verbose cwd /home/tippu/GitLab/tippu-02-ipl_data_project
+319 error Linux 4.15.0-42-generic
+320 error argv "/usr/bin/node" "/usr/bin/npm" "install" "node"
+321 error node v8.10.0
+322 error npm  v3.5.2
+323 error code ELIFECYCLE
+324 error node@11.4.0 preinstall: `node installArchSpecificPackage`
+324 error Exit status 1
+325 error Failed at the node@11.4.0 preinstall script 'node installArchSpecificPackage'.
+325 error Make sure you have the latest version of node.js and npm installed.
+325 error If you do, this is most likely a problem with the node package,
+325 error not with npm itself.
+325 error Tell the author that this fails on your system:
+325 error     node installArchSpecificPackage
+325 error You can get information on how to open an issue for this project with:
+325 error     npm bugs node
+325 error Or if that isn't available, you can get their info via:
+325 error     npm owner ls node
+325 error There is likely additional logging output above.
+326 verbose exit [ 1, true ]
